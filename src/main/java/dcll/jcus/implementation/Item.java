@@ -10,7 +10,7 @@ public class Item {
         this.item = s;
     }
 
-    public String getItem() {
+    public String getValue() {
         return item;
     }
 }

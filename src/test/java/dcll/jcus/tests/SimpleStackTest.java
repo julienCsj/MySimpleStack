@@ -45,7 +45,7 @@ public class SimpleStackTest extends TestCase {
     public void testPeek() throws Exception {
         this.stack = new SimpleStack();
         stack.push(new Item("julien"));
-        assertTrue(stack.peek().getItem().equals("julien"));
+        assertTrue(stack.peek().getValue().equals("julien"));
     }
 
     public void testPeekSize() throws Exception {
@@ -64,7 +64,7 @@ public class SimpleStackTest extends TestCase {
         this.stack = new SimpleStack();
         stack.push(new Item("julien"));
         stack.push(new Item("elliot"));
-        assertTrue(stack.pop().getItem().equals("elliot"));
+        assertTrue(stack.pop().getValue().equals("elliot"));
     }
 
     public void testPop2() throws Exception {
@@ -72,7 +72,7 @@ public class SimpleStackTest extends TestCase {
         stack.push(new Item("julien"));
         stack.push(new Item("elliot"));
         Item i = stack.pop();
-        assertTrue(stack.pop().getItem().equals("julien"));
+        assertTrue(stack.pop().getValue().equals("julien"));
     }
 
     public void testPop3() throws Exception {
