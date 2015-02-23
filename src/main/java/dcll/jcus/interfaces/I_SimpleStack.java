@@ -29,4 +29,5 @@ public interface I_SimpleStack {
     public Item pop() throws EmptyStackException;
 
     public boolean addCollection(ArrayList<Item> lesItems);
+    public boolean removeCollection(int nbElement);
 }

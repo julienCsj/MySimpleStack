@@ -61,4 +61,16 @@ public class SimpleStack implements I_SimpleStack {
         }
         return true;
     }
+
+    @Override
+    public boolean removeCollection(int nbElement) {
+        for(int i=0; i<nbElement; i++) {
+            try {
+                this.pop();
+            } catch (EmptyStackException e) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
