@@ -73,4 +73,19 @@ public class SimpleStack implements I_SimpleStack {
         }
         return true;
     }
+
+    @Override
+    public boolean contain(Item item) {
+        Case suivant;
+        suivant = this.sommet;
+        while(suivant.getSuivant() != null) {
+            if(suivant.getItem() == item) {
+                return true;
+            }
+            suivant = suivant.getSuivant();
+        }
+        return false;
+    }
+
+
 }
