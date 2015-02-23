@@ -73,4 +73,10 @@ public class SimpleStack implements I_SimpleStack {
         }
         return true;
     }
+
+    @Override
+    public void vider() {
+        this.sommet = null;
+        this.nbElement = 0;
+    }
 }
