@@ -3,6 +3,8 @@ package dcll.jcus.implementation;
 import dcll.jcus.exceptions.EmptyStackException;
 import dcll.jcus.interfaces.I_SimpleStack;
 
+import java.util.ArrayList;
+
 /**
  * Created by julien on 13/02/15.
  */
@@ -50,5 +52,13 @@ public class SimpleStack implements I_SimpleStack {
         this.sommet = sommet.getSuivant();
         this.nbElement--;
         return toReturn;
+    }
+
+    @Override
+    public boolean addCollection(ArrayList<Item> lesItems) {
+        for(Item i : lesItems) {
+            this.push(i);
+        }
+        return true;
     }
 }
