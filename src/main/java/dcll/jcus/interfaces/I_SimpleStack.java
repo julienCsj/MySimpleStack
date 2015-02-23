@@ -30,4 +30,5 @@ public interface I_SimpleStack {
 
     public boolean addCollection(ArrayList<Item> lesItems);
     public boolean removeCollection(int nbElement);
+    public boolean contain(Item item);
 }
